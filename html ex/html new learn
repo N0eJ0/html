@@ -1,0 +1,66 @@
+
+
+<button type="submit" formaction-"url/post" formmethod="post">SUBMIT</>button
+<button type="reset">RESET</button>
+
+
+
+
+<form action= url/get method="get">
+	<label for="firstName">First Name:</label>
+	<input type="text" name="fn" id="firstName" Placeholder="john">
+	<label for="lastName">Last Name:</label>
+	<input type="text" name="ln" id="lastName" Placeholder="doe">
+	<label for="favDecade">Fav decade:</label>
+	<input type="number" name="decade" id="favDecade" min="1950" max="2020" step="10" value="1980">
+
+	<label for="coffee">Favourite Coffee:</label>
+	<select name="coffee" id="coffee" multiple size="5">
+		<optgroup label="Coffees">
+			<option value="regular coffee" selected>Regular Coffee</option>
+			<option value="iced coffee">Iced Coffee</option>
+		</optgroup>
+		<optgroup label="Coffees">
+			<option value="latte">Latte</option>
+			<option value="cortado">Cortado</option>
+		</optgroup>		
+	</select>
+</form>
+
+for - specifies which id this label belongs to
+
+type - type of input
+id - unique id for the label to identify the input
+<input> name - in certain scenarios a group of elements belong to the same input group. ex: if there's 4 options in a radio input none of the other three should be selected when one of the options is selected and for html to understand which elements belong in the same group name tag is used to show all of them belongs to same group. also it helps server to identify which group each element belongs to
+
+placeholder* - default text that should appear inside the text dialogue box
+autocomplete - suggests previously given inputs
+required - highlights the text dialogue box, blocks the user from submitting an empty input
+autofocus - to make the cursor appear inside the text dialogue box immediately after opening the site
+
+the above two input forms will be placed next to each other instead of in different lines, to make the input forms on different lines use <div> or <p>
+
+type="password" - to hide the texts inside the input form
+
+pattern - enforces a regular expresson
+example: pattern="[0-9]{4}[0-9]{6}" //we can give the follwoing number as an input 0484 2621234
+
+step - increment by the multiple of the value specified in step
+
+value - gives the form a default value, might send that value to server?
+
+<select> - used to include multiple options to be selected by the user
+
+<select> multiple - to choose multiple options
+
+<select> size - to specify how many options should be shown on screen at a time
+
+<options> - each unique element of the select tag is given in options tag
+
+<options> selected - displays that specific option as the default value in the input form
+
+<options> required - force the user to complete input forms that were left blank when user try to submit
+
+<fieldset>
+
+<legend> - puts a group of elements in a box
